@@ -15,12 +15,12 @@
 				<li><a href="#">Информация</a></li>
 				<li><a href="#">Фото и видео</a></li>
 				<li><a href="#">Карта штата</a></li>
-				<li><a href="#">Гостиницы</a></li>
+				<li><a href="hotels.html">Гостиницы</a></li>
 			</ul>
 		</nav>
   	</header>
   	<main class="container">
-  		<section class="intro"></section><!-- Как собрать этот кусок? Весь из img? -->
+  		<section class="intro"></section>
 		<section class="promo">
 			<h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
 			<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
@@ -59,7 +59,7 @@
 			</div>
 		</div>
 		<div class="reasons">
-			<ul class="reasons-list"> <!-- предыдущие и последующие преимущества тоже можно считать началом и продолжением этого списка, но у них разный дизайн, и разрыв другим списком (еда, жилье, сувениры).  -->
+			<ul class="reasons-list">
 				<li class="reason-list-item">
 					<h2>Небольшая площадь</h2>
 					<span>-№3-</span>
@@ -78,37 +78,35 @@
 			</ul>
 		</div>
 		<section class="order-offer">
-			<div class="order-offer-top">
-				<span><b>Заинтересовались?</b></span>
-				<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-			</div>
-			<div class="hotel-search">
-				<div class="hotel-search-top">
-					<h2>Поиск гостиниц в Седоне</h2>
+			<span><b>Заинтересовались?</b></span>
+			<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+<!-- 		<span class="search-btn">Поиск гостиницы в Седоне</span> -->
+			<a class="search-btn" href="#">Поиск гостиницы в Седоне</a>
+		</section>
+		<section class="hotel-search">
+			<div class="search-form">
+				<div class="arrival-date">
+					<label for="arrival-date">Дата заезда</label>
+					<input id="arrival-date" type="date" name="arrival">
 				</div>
-				<div class="search-form">
-					<div class="arrival-date">
-						<label for="arrival-date">Дата заезда</label>
-						<input id="arrival-date" type="date" name="arrival">
-					</div>
-					<div class="departure-dat">
-						<label for="departure-date">Дата выезда</label>
-						<input id="departure-date" type="date" name="departure">
-					</div>
-					<div class="abults">
-						<label for="abults">Взрослые</label>
-						<input id="abults" type="number" name="abults" value=2>
-					<div class="children">
-						<label for="children">Дети</label>
-						<input id="children" type="number" name="children" value=0>
-					</div>
-					<div class="serch-btn">
-						<input type="submit" class="btn" value="Найти">
-					</div>
+				<div class="departure-dat">
+					<label for="departure-date">Дата выезда</label>
+					<input id="departure-date" type="date" name="departure">
 				</div>
-				<div class="map"></div>
+				<div class="abults">
+					<label for="abults">Взрослые</label>
+					<input id="abults" type="number" name="abults" value=2>
+				</div>
+				<div class="children">
+					<label for="children">Дети</label>
+					<input id="children" type="number" name="children" value=0>
+				</div>
+				<div class="serch-btn">
+					<input type="submit" class="btn" value="Найти">
+				</div>
 			</div>
 		</section>
+		<section class="map"></section>
   	</main>
   	<footer class="page-footer">
 	  	<div class="footer-hashtag">
@@ -126,6 +124,3 @@
   	</footer>
   </body>
 </html>
-
-<!-- Переделать:
-Поиск гостиницы - кнопка. Форма-попап -->
