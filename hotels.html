@@ -25,7 +25,52 @@
 	<main>
 		<section class="filters">
 			<h2 class="visually-hidden">Фильтр гостиниц</h2>
-			<!-- 	  	Здесь будет форма -->
+			<form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
+
+				<fieldset class="additions">
+					<legend>Инфраструктура:</legend>
+					<div>
+						<label for="additions-pool">Бассеин</label>
+						<input type="checkbox" name="additions-pool" id="additions-pool">
+					</div>
+					<div>
+						<label for="additions-parking">Парковка</label>
+						<input type="checkbox" name="additions-parking" id="additions-parking">
+					</div>
+					<div>
+						<label for="additions-wifi">wi-fi</label>
+						<input type="checkbox" name="additions-wifi" id="additions-wifi">
+					</div>
+				</fieldset>
+
+				<fieldset class="accommodation-type">
+					<legend>Тип жилья:</legend>
+					<div>
+						<label for="hotel">Гостиница</label>
+						<input type="checkbox" name="hotel" id="hotel">
+					</div>
+					<div>
+						<label for="motel">Мотель</label>
+						<input type="checkbox" name="motel" id="motel">
+					</div>
+					<div>
+						<label for="apartments">Апартаменты</label>
+						<input type="checkbox" name="apartments" id="apartments">
+					</div>
+				</fieldset>
+
+				<div class="accommodation-price">
+					<h3>Стоимость в сутки (р):</h3>
+					<table class="accommodation-price-table">
+						<tr>
+							<td>От 0</td>
+							<td>До 3000</td>
+						</tr>
+					</table>
+					<div class="price range"></div>
+				</div>
+				<button class="button" type="submit">Показать</button>
+			</form>
 		</section>
 
 		<div class="sorting">
@@ -40,6 +85,7 @@
 		</div>
 
 		<section class="hotels">
+			<h2 class="visually-hidden">Найденное жилье</h2>
 			<ul class="hotels-list">
 				<li class="hotel-item">
 					<img src="img/hotel-1.jpg" alt="Arama resort & spa" width="135" height="90">

@@ -9,7 +9,7 @@
 	<header class="page-header">
 		<nav class="main-navigation">
 			<a class="page-header-logo">
-				<img src="img/logo.png" width="138" height="70" alt="Sedona">
+				<img src="img/logo.png" width="138" height="70" alt="Sedona logo">
 			</a>
 			<ul class="site-navigation">
 				<li><a href="#">Информация</a></li>
@@ -38,7 +38,7 @@
 		</div>
 
 		<section class="features">
-			<h2 class="visully-hidden">Приемущества</h2>
+			<h2 class="visually-hidden">Приемущества</h2>
 			<ul class="features-list">
 				<li class="feature-item feature-accommodation">
 					<h3>Жилье</h3>
@@ -84,38 +84,38 @@
 			</ul>
 		</div>
 
-		<section class="order-offer">
+		<section class="hotel-search">
+			<h2 class="visually-hidden">Поиск гостиницы</h2>
 			<span><b>Заинтересовались?</b></span>
 			<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-			<a class="search-btn" href="#">Поиск гостиницы в Седоне</a>
-		</section>
+			<button class="button order-button" type="button">Поиск гостиницы в Седоне</button>
 
-		<section class="hotel-search">
-			<div class="search-form">
+			<form class="hotel-search-form" action="https://echo.htmlacademy.ru" method="post">
 				<div class="arrival-date">
 					<label for="arrival-date">Дата заезда</label>
-					<input id="arrival-date" type="date" name="arrival">
+					<input id="arrival-date" type="text" name="arrival" placeholder="24 апреля 2017">
 				</div>
 				<div class="departure-date">
 					<label for="departure-date">Дата выезда</label>
-					<input id="departure-date" type="date" name="departure">
+					<input id="departure-date" type="text" name="departure" placeholder="4 июля 2017">
 				</div>
 				<div class="abults">
 					<label for="abults">Взрослые</label>
-					<input id="abults" type="number" name="abults" value=2>
+					<input id="abults" type="number" name="abults" placeholder="2">
 				</div>
 				<div class="children">
 					<label for="children">Дети</label>
-					<input id="children" type="number" name="children" value=0>
+					<input id="children" type="number" name="children" placeholder="0">
 				</div>
-				<div class="serch-btn">
-					<input type="submit" class="btn" value="Найти">
+				<div class="search-btn">
+					<button class="button" type="submit">Найти</button>
 				</div>
-			</div>
+			</form>
 		</section>
 
 		<section class="map">
-			<img src="img/map.jpg" alt="Map of the location Sedona city" width="1200" height="593">
+			<h2 class="visually-hidden">Как добраться до Седоны</h2>
+			<img src="img/map.jpg" alt="Карта расположения Седоны" width="1200" height="593">
 		</section>
 	</main>
 
