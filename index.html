@@ -30,37 +30,37 @@
 			<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
 		</section>
 
-		<div class="reason-item ">
-			<div class="reason-item-text">
-				<h2>Настоящий городок</h2>
+		<div class="advantage">
+			<div class="advantage-left advantage-text">
+				<h3>Настоящий городок</h3>
 				<span>-№1-</span>
 				<p>Седона - не аттракциона для туристов, там течёт настоящая жизнь</p>
 			</div>
-			<div class="reason-item-image city-image"></div>
+			<div class="advantage-image city-image"></div>
 		</div>
 
 		<section class="features">
 			<h2 class="visually-hidden">Приемущества</h2>
 			<ul class="features-list">
-				<li class="feature-item feature-accommodation">
+				<li class="feature-item feature-accommodation advantage-text">
 					<h3>Жилье</h3>
 					<p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
 				</li>
-				<li class="feature-item feature-food">
+				<li class="feature-item feature-food advantage-text">
 					<h3>Еда</h3>
 					<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 				</li>
-				<li class="feature-item feature-souvenirs">
+				<li class="feature-item feature-souvenirs advantage-text">
 					<h3>Сувениры</h3>
 					<p>Не только китайского, но и местного производства!</p>
 				</li>
 			</ul>
 		</section>
 
-		<div class="reason-item">
-			<div class="reason-item-image bridge-image"></div>
-			<div class="reason-item-text">
-				<h2>Там есть мост дьявола</h2>
+		<div class="advantage">
+			<div class="advantage-image bridge-image"></div>
+			<div class="advantage-right advantage-text">
+				<h3>Там есть мост дьявола</h3>
 				<span>-№2-</span>
 				<p>Да, по нему можно пройти! если конечно вы осмелитесь</p>
 			</div>
@@ -68,18 +68,18 @@
 
 		<div class="reasons">
 			<ul class="reasons-list">
-				<li class="reason-list-item">
-					<h2>Небольшая площадь</h2>
+				<li class="reason-list-item advantage-text">
+					<h3>Небольшая площадь</h3>
 					<span>-№3-</span>
 					<p>Все достопримечательности находятся близко</p>
 				</li>
-				<li class="reason-list-item">
-					<h2>Красивая дорога</h2>
+				<li class="reason-list-item advantage-text">
+					<h3>Красивая дорога</h3>
 					<span>-№4-</span>
 					<p>Ехать в Седону из Лас-Вегаса совсем не скучно</p>
 				</li>
-				<li class="reason-list-item">
-					<h2>Мало туристов</h2>
+				<li class="reason-list-item advantage-text">
+					<h3>Мало туристов</h3>
 					<span>-№5-</span>
 					<p>Большинство едет в Гранд Каньон и толпится там</p>
 				</li>
@@ -87,10 +87,12 @@
 		</div>
 
 		<section class="hotel-search">
-			<h2 class="visually-hidden">Поиск гостиницы</h2>
-			<span><b>Заинтересовались?</b></span>
-			<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-			<button class="button order-button" type="button">Поиск гостиницы в Седоне</button>
+			<div class="order">
+				<h2 class="visually-hidden">Поиск гостиницы</h2>
+				<span><b>Заинтересовались?</b></span>
+				<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+				<button class="button brown-btn" type="button">Поиск гостиницы в Седоне</button>
+			</div>
 
 			<form class="hotel-search-form" action="https://echo.htmlacademy.ru" method="post">
 				<div class="hotel-search-form-date">
@@ -110,7 +112,7 @@
 					<input id="children" type="number" name="children" placeholder="0">
 				</div>
 				<div class="search-btn">
-					<button class="button" type="submit">Найти</button>
+					<button class="button blue-btn" type="submit">Найти</button>
 				</div>
 			</form>
 		</section>
@@ -123,7 +125,7 @@
 
 	<footer class="page-footer">
 		<div class="footer-hashtag">
-			<h2>#visitsedona</h2>
+			<h3>#visitsedona</h3>
 		</div>
 		<div class="footer-social">
 			<a class="social-btn social-btn-tw" href="#">Twitter</a>
@@ -132,7 +134,10 @@
 		</div>
 		<div class="footer-copyright">
 			<b>Website by:</b>
-			<a class="footer-logo" href="#">HTML Academy</a>
+			<a class="footer-logo" href="https://htmlacademy.ru">
+				HTML Academy
+				<img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy">
+			</a>
 		</div>
 	</footer>
 </body>
