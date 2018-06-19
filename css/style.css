@@ -152,7 +152,7 @@ a {
 	color: #000000;
 }
 
-.search-form input[type="search"]::-moz-placeholder {
+.search-form input::-moz-placeholder {
 	color: #000000;
 }
 
@@ -220,13 +220,149 @@ a {
 	line-height: 26px;
 }
 
-.footer-copyright img:hover {
+.academy-logo {
+	width: 115px;
+	height: 41px;
+}
+
+.academy-logo:hover,
+.academy-logo:focus {
 	fill: #81b3d2;
 }
 
+.academy-logo:active {
+	fill: #bdbbbc;
+}
+
+.filters {
+	color:#ffffff;
+	font-size: 16px;
+	line-height: 21px;
+
+	background-color: #7a99b8;
+	background-image: url("../img/filter-background.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.filters fieldset {
+	border: none;
+}
+
+.filters legend {
+	font-weight: bold;
+}
+
+.filters input {
+	background-color: transparent;
+	border: none;
+}
+
+.price {
+	border: 2px solid #ffffff;
+}
+
+.price .price-from {
+	border-right: 2px solid #ffffff;
+}
+
+.price input::-webkit-input-placeholder { 
+	color: #ffffff;
+}
+
+.price input::-moz-placeholder {
+	color: #ffffff;
+}
+
+.transparent-btn {
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 21px;
+	text-transform: uppercase;
+
+	background-color: transparent;
+	border: 2px solid #ffffff;
+}
+
+.transparent-btn:hover,
+.transparent-btn:focus{
+	color: #000000;
+
+	background-color: #ffffff;
+}
 
 
+.found {
+	color:#000000;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+}
 
+.sorting {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.sorting-list{
+	list-style: none;
+}
+
+.sorting-list-btn {
+	color:rgba(0, 0, 0, 0.3);
+
+	border-bottom: 1px dotted #81b3d2;
+}
+
+.sorting-list-btn:hover,
+.sorting-list-btn:focus {
+	color:#81b3d2;
+}
+
+.sorting-list-btn:active {
+	color:#000000;
+
+	border:none;
+}
+
+.hotels-list {
+	list-style: none;
+}
+
+.hotel-item {
+	border-top: 1px solid #666666;
+}
+
+.hotel-item:last-child {
+	border-bottom: 1px solid #666666;
+}
+
+.hotel-name {
+	color:#000000;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+}
+
+.hotel-name:hover,
+.hotel-name:focus{
+	color:#81b3d2;
+}
+
+.hotel-name:active{
+	color:rgba(0, 0, 0, 0.3);
+}
+
+.hotel-rating {
+	color:#666666;
+
+	background-color: #f2f2f2;
+}
+
+.hotel-btn {
+	font-size: 14px;
+	line-height: 21px;
+}
 
 
 
