@@ -373,17 +373,17 @@ a {
 
 /* ----- Сеточные стили -----*/
 
-.page-header {
+.container {
+	width: 1200;
 	margin: 0 40px;
-	width: 1200px;
 }
 
 .site-navigation {
 	display: flex;
+	align-items: center;
+	height: 56px;
 	margin: 0;
 	padding: 0;
-	height: 56px;
-	align-items: center;
 }
 
 .site-navigation li {
@@ -411,14 +411,13 @@ a {
 	position: absolute;
 	left: 571px;
 	top: 0;
+
 	width: 138px;
 	height: 70px;
 }
 
 .intro {
 	height: 508px;
-	margin: 0 40px;
-	width: 1200px;
 }
 
 .promo {
@@ -426,21 +425,17 @@ a {
 	justify-content: center;
 	align-items: center;
 	height: 216px;
-	margin: 0 40px;
-	width: 1200px;
 }
 
-.promo_info {
+.promo-info {
 	width: 575px;
 	margin: 0;
 	padding: 0;
 }
 
 .advantage {
-	height: 256px;
-	margin: 0 40px;
-	width: 1200px;
 	display: flex;
+	height: 256px;
 }
 
 .advantage-text {
@@ -452,17 +447,15 @@ a {
 
 .features {
 	height: 330px;
-	margin: 0 40px;
-	width: 1200px;
 }
 
 .features-list {
-	margin: 0;
-	padding:0px;
-	height: 330px;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	height: 330px;
+	margin: 0;
+	padding:0px;
 }
 
 .features-list li {
@@ -472,17 +465,15 @@ a {
 
 .reasons {
 	height: 256px;
-	margin: 0 40px;
-	width: 1200px;
 }
 
 .reasons-list {
-	margin: 0;
-	padding:0px;
-	height: 256px;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	height: 256px;
+	margin: 0;
+	padding:0px;
 }
 
 .reasons-list li {
@@ -492,25 +483,53 @@ a {
 
 .order {
 	height: 290px;
-	margin: 0 40px;
-	width: 1200px;
 }
 
 .map {
 	height: 473px;
-	margin: 0 40px;
-	width: 1200px;
 }
 
 .map-image {
-	display: none;
+	display: none; /*временно*/
 }
 
 .page-footer {
-	height: 120px;
-	margin: 0 40px;
-	width: 1200px;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	height: 120px;
+}
+
+/*hotels.html */
+
+.filters {
+	height: 217px;
+}
+
+.filters-form {
+	display: flex;
+}
+
+.found-sorting {
+	display: flex;
+	height: 87px;
+}
+
+.found {
+	display: flex;
+}
+
+.sorting {
+	display: flex;
+}
+
+.hotels-list {
+	display: flex;
+	flex-direction: column;
+	margin: 0px;
+	padding: 0px;
+}
+
+.hotel-item {
+	display: flex;
 }
