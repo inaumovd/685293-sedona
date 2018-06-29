@@ -16,6 +16,17 @@ a {
 	text-decoration: none;
 }
 
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
 .main-navigation {
 	line-height: 26px;
 	color: #000000;
@@ -42,7 +53,6 @@ a {
 
 .intro {
 	height: 510px;
-
 	background-color: #496173;
 	background-image: url("../img/background.jpg");
 	background-repeat: no-repeat;
@@ -50,8 +60,26 @@ a {
 	background-size: cover;
 }
 
+.intro::before {
+	content: "";
+
+	position: absolute;
+	top: 132px;
+
+	width: 1200px; 
+	height: 432px;
+
+/*	background-color: #496173;*/
+	background-image: url("../img/intro.png");
+	background-repeat: no-repeat;
+/*	background-repeat: no-repeat;
+	background-position: 50% 30%;
+	background-size: cover;*/
+}
+
 .promo {
 	text-align: center;
+	background-color: #ffffff;
 }
 
 .promo h1 {
@@ -65,8 +93,11 @@ a {
 	line-height: 21px;
 }
 
-.advantage-left,
-.advantage-right {
+.advantage .advantage-left,
+.advantage .advantage-right {
+	box-sizing: border-box;
+	width: 400px;
+
 	text-align: center;
 	color: #ffffff;
 
@@ -99,6 +130,38 @@ a {
 
 .features-list{
 	list-style: none;
+	background-color: #ffffff;
+}
+
+.feature-item {
+	position: relative;
+}
+
+.feature-item::before {
+	content: "";
+
+	position: absolute;
+	bottom: 110px;
+	left: 102px;
+	width: 80px;
+	height: 90px;
+
+	background-repeat: no-repeat;
+}
+
+.feature-item:first-child::before {
+	background-image: url("../img/icon-1.svg");
+}
+
+.feature-item:nth-child(2)::before {
+	background-image: url("../img/icon-3.svg");
+	left: 104px;
+}
+
+.feature-item:nth-child(3)::before {
+	background-image: url("../img/icon-2.svg");
+	bottom: 113px;
+	left: 110px;
 }
 
 .bridge-image{
@@ -374,7 +437,7 @@ a {
 /* ----- Сеточные стили -----*/
 
 .container {
-	width: 1200;
+	width: 1200px;
 	margin: 0 40px;
 }
 
@@ -388,30 +451,37 @@ a {
 
 .site-navigation li {
 	width: 130px;
+/*	width: 9%;*/
 }
 
 .site-navigation li:first-child {
 	padding-left: 72px;
+/*	padding-left: 6%;*/
 }
 
 .site-navigation li:nth-child(2) {
 	padding-left: 110px;
+/*	padding-left: 12%;*/
 }
 
 .site-navigation li:nth-child(3) {
 	padding-left: 355px;
+/*	padding-left: 32%;*/
 }
 
 .site-navigation li:nth-child(4) {
 	padding-left: 120px;
+/*	padding-left: 12%;
+	padding-right: 5%;*/
 }
 
 
 .page-header-logo {
 	position: absolute;
 	left: 571px;
+/*	left: 50%;*/
 	top: 0;
-
+/*	margin-left: -69px;*/
 	width: 138px;
 	height: 70px;
 }
@@ -421,16 +491,22 @@ a {
 }
 
 .promo {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	height: 216px;
 }
 
 .promo-info {
-	width: 575px;
-	margin: 0;
-	padding: 0;
+	width: 100%;
+	background-color: #ffffff;
+}
+
+.promo-info h1 {
+	margin: 0 auto 30px auto;
+	padding: 58px 300px 0 300px;
+}
+
+.promo-info p{
+	margin: 0 0 53px 0;
+	padding: 0 300px;
 }
 
 .advantage {
@@ -439,10 +515,18 @@ a {
 }
 
 .advantage-text {
-	width: 280px;
-	padding-top:47px;
-	padding-left: 60px;
-	padding-right: 60px;
+	width: 284px;
+	padding-top:29px;
+	padding-left: 52px;
+	padding-right: 52px;
+}
+
+.advantage-text p {
+	margin-top: 21px;
+}
+
+.advantage-title {
+	padding:0 40px;
 }
 
 .features {
@@ -461,6 +545,7 @@ a {
 .features-list li {
 	margin: 0px;
 	padding:0px;
+	padding-top: 70px;
 }
 
 .reasons {
@@ -482,8 +567,20 @@ a {
 }
 
 .order {
+	position: relative;
+	box-sizing: border-box;
+	padding-top: 52px;
 	height: 290px;
 }
+
+.order .brown-btn {
+	position: absolute;
+	width: 568px;
+	height: 86px;
+	left:316px;
+	top: 204px;
+}
+
 
 .map {
 	height: 473px;
@@ -494,11 +591,37 @@ a {
 }
 
 .page-footer {
+	box-sizing: border-box;
+	padding-left: 132px;
 	display: flex;
-	justify-content: space-around;
 	align-items: center;
 	height: 120px;
 }
+
+.footer-social {
+	display: flex;
+	justify-content: space-between;
+	width: 104px;
+	margin-left: 256px;
+	margin-bottom: 1px;
+}
+
+.footer-social a {
+	font-size: 0;
+	position: relative;
+}
+
+.footer-social a:before {
+	content: "";
+	position: absolute;
+	width: 46px;
+	height: 46px;
+	background-color: #81b3d2;
+}
+
+
+
+
 
 /*hotels.html */
 
