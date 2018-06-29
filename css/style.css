@@ -32,6 +32,7 @@ a {
 
 	line-height: 26px;
 	color: #000000;
+	font-weight: bold;
 
 	background-color: #ffffff;
 }
@@ -66,7 +67,7 @@ a {
 	content: "";
 
 	position: absolute;
-	top: 133px;
+	top: 132px;
 
 	width: 1200px; 
 	height: 432px;
@@ -441,6 +442,7 @@ a {
 .container {
 	width: 1200px;
 	margin: 0 auto;
+	background-color: #ffffff;
 }
 
 .site-navigation {
@@ -467,7 +469,7 @@ a {
 }
 
 .site-navigation li:nth-child(3) {
-	padding-left: 355px;
+	padding-left: 357px;
 /*	padding-left: 32%;*/
 }
 
@@ -502,7 +504,7 @@ a {
 }
 
 .promo-info h1 {
-	margin: 0 auto 30px auto;
+	margin: 2px auto 30px auto;
 	padding: 58px 300px 0 300px;
 }
 
