@@ -51,32 +51,6 @@ a {
 	color:rgba(0, 0, 0, 0.3);
 }
 
-.intro {
-	height: 510px;
-	background-color: #496173;
-	background-image: url("../img/background.jpg");
-	background-repeat: no-repeat;
-	background-position: 50% 30%;
-	background-size: cover;
-}
-
-.intro::before {
-	content: "";
-
-	position: absolute;
-	top: 132px;
-
-	width: 1200px; 
-	height: 432px;
-
-/*	background-color: #496173;*/
-	background-image: url("../img/intro.png");
-	background-repeat: no-repeat;
-/*	background-repeat: no-repeat;
-	background-position: 50% 30%;
-	background-size: cover;*/
-}
-
 .promo {
 	text-align: center;
 	background-color: #ffffff;
@@ -93,28 +67,9 @@ a {
 	line-height: 21px;
 }
 
-.advantage .advantage-left,
-.advantage .advantage-right {
-	box-sizing: border-box;
-	width: 400px;
-
-	text-align: center;
-	color: #ffffff;
-
-	background-color: #81b3d2;
-}
-
 .advantage-text h3 {
 	font-weight: bold;
 	font-size: 21px;
-}
-
-.advantage-image{
-	width:800px;
-	height: 256px;
-
-	background-position:center;
-	background-repeat: no-repeat;
 }
 
 .city-image{
@@ -126,6 +81,7 @@ a {
 
 .features {
 	text-align: center;
+	background-color: #ffffff;
 }
 
 .features-list{
@@ -141,8 +97,8 @@ a {
 	content: "";
 
 	position: absolute;
-	bottom: 110px;
-	left: 102px;
+	bottom: 180px;
+	left: 162px;
 	width: 80px;
 	height: 90px;
 
@@ -155,13 +111,14 @@ a {
 
 .feature-item:nth-child(2)::before {
 	background-image: url("../img/icon-3.svg");
-	left: 104px;
+	bottom: 179px;
+	left: 163px;
 }
 
 .feature-item:nth-child(3)::before {
 	background-image: url("../img/icon-2.svg");
-	bottom: 113px;
-	left: 110px;
+	bottom: 184px;
+	left: 168px;
 }
 
 .bridge-image{
@@ -442,110 +399,149 @@ a {
 }
 
 .site-navigation {
+	position: relative;
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
-	height: 56px;
 	margin: 0;
 	padding: 0;
 }
 
-.site-navigation li {
-	width: 130px;
-/*	width: 9%;*/
+.site-navigation a {
+	display: block;
+	padding: 15px 20px;
 }
 
 .site-navigation li:first-child {
-	padding-left: 72px;
-/*	padding-left: 6%;*/
+	margin-left: 51px;
 }
 
 .site-navigation li:nth-child(2) {
-	padding-left: 110px;
-/*	padding-left: 12%;*/
+	padding-left: 108px;
 }
 
 .site-navigation li:nth-child(3) {
-	padding-left: 355px;
-/*	padding-left: 32%;*/
+	padding-left: 347px;
 }
 
 .site-navigation li:nth-child(4) {
-	padding-left: 120px;
-/*	padding-left: 12%;
-	padding-right: 5%;*/
+	padding-left: 126px;
 }
 
 
 .page-header-logo {
 	position: absolute;
-	left: 571px;
-/*	left: 50%;*/
+	left: 50%;
 	top: 0;
-/*	margin-left: -69px;*/
+	margin-left: -69px;
 	width: 138px;
 	height: 70px;
 }
 
 .intro {
 	height: 508px;
+	background-color: #496173;
+	background-image: url("../img/background.jpg");
+	background-repeat: no-repeat;
+	background-position: 0px -83px;
+	background-size: cover;
 }
 
-.promo {
-	height: 216px;
+.intro::before {
+	content: "";
+
+	position: absolute;
+	top: 132px;
+
+	width: 1200px; 
+	height: 432px;
+
+	background-image: url("../img/intro.png");
+	background-repeat: no-repeat;
 }
 
 .promo-info {
-	width: 100%;
 	background-color: #ffffff;
+	padding: 61px 288px 53px 288px;
 }
 
 .promo-info h1 {
-	margin: 0 auto 30px auto;
-	padding: 58px 300px 0 300px;
+	padding: 0;
+	margin: 0 0 29px 0;
 }
 
 .promo-info p{
-	margin: 0 0 53px 0;
-	padding: 0 300px;
+	padding: 0;
+	margin: 0;
 }
 
 .advantage {
 	display: flex;
-	height: 256px;
 }
 
 .advantage-text {
-	width: 284px;
-	padding-top:29px;
-	padding-left: 52px;
-	padding-right: 52px;
+	padding: 48px 49px 59px 49px;
 }
 
 .advantage-text p {
+	margin:0;
+	padding: 0;
 	margin-top: 21px;
 }
 
 .advantage-title {
-	padding:0 40px;
+	margin:0 0 23px 0;
+	padding: 0 43px;
+}
+
+.advantage .advantage-left,
+.advantage .advantage-right {
+	box-sizing: border-box;
+	width: 400px;
+
+	text-align: center;
+	color: #ffffff;
+
+	background-color: #81b3d2;
+}
+
+.advantage-image {
+	width:800px;
+
+	background-position:center;
+	background-repeat: no-repeat;
 }
 
 .features {
-	height: 330px;
+	margin: 0px;
+	padding:0px;
 }
 
 .features-list {
 	display: flex;
-	justify-content: space-around;
 	align-items: center;
-	height: 330px;
 	margin: 0;
-	padding:0px;
+	padding: 0;
 }
 
-.features-list li {
-	margin: 0px;
-	padding:0px;
-	padding-top: 70px;
+.feature-item {
+width: 400px;
+padding-top: 162px;
+padding-bottom: 82px;
+}
+
+.feature-item h3, 
+.feature-item p {
+	margin: 0;
+	padding: 0;
+}
+
+.feature-item h3 {
+	margin-bottom: 23px;
+}
+
+.advantage-bridge p {
+
 }
 
 .reasons {
@@ -603,7 +599,7 @@ a {
 	justify-content: space-between;
 	width: 104px;
 	margin-left: 256px;
-	margin-bottom: 1px;
+	margin-bottom:22px;
 }
 
 .footer-social a {
