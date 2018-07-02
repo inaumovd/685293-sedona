@@ -146,22 +146,11 @@ a {
 	display: flex;
 }
 
-.advantage-text p {
-	margin:0;
-	padding: 0;
-	margin-top: 21px;
-}
-
-.advantage-title {
-	margin:0 0 23px 0;
-	padding: 0 66px;
-}
-
-.advantage .advantage-left,
-.advantage .advantage-right {
+.advantage-left,
+.advantage-right {
 	box-sizing: border-box;
 	width: 400px;
-	padding: 48px 49px 61px 49px;
+	padding: 48px 0 60px 0;
 
 	text-align: center;
 	color: #ffffff;
@@ -169,20 +158,24 @@ a {
 	background-color: #81b3d2;
 }
 
+.advantage-title {
+	margin: 0 0 24px 0;
+	padding: 0 92px;
+	font-weight: bold;
+	font-size: 21px;
+}
+
+.advantage-left p,
+.advantage-right p{
+	padding: 0 42px;
+	margin: 21px 0 0 0;
+}
+
 .advantage-image {
 	width:800px;
 
 	background-position:center;
 	background-repeat: no-repeat;
-}
-
-.advantage-text h3 {
-	font-weight: bold;
-	font-size: 21px;
-}
-
-.tourists {
-	padding: 0 78px;
 }
 
 .city-image{
@@ -212,17 +205,19 @@ a {
 	position: relative;
 	width: 400px;
 	padding-top: 162px;
-	padding-bottom: 82px;
-}
-
-.feature-item h3, 
-.feature-item p {
-	margin: 0;
-	padding: 0;
+	padding-bottom: 83px;
 }
 
 .feature-item h3 {
-	margin-bottom: 23px;
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	font-size: 21px;
+}
+
+.feature-item p {
+	margin: 23px 0 0 0;
+	padding: 0 56px;
 }
 
 .feature-item::before {
@@ -266,7 +261,11 @@ a {
 }
 
 .reason-title {
-	padding: 0 10px;
+	margin: 0;
+	padding: 0 120px;
+	font-weight: bold;
+	font-size: 21px;
+	padding-bottom: 24px;
 }
 
 .reasons-list{
@@ -274,13 +273,22 @@ a {
 	display: flex;
 	margin: 0;
 	padding: 0;
-	justify-content: center;
+	align-items: center;
 }
 
 .reason-list-item {
 	background-color: #eeeeee;
 	padding: 0;
+	width: 400px;
+	padding-top: 47px;
+	padding-bottom: 59px;
 }
+
+.reason-list-item p {
+	margin: 21px 0 0 0;
+	padding: 0 32px;
+}
+
 
 .order {
 	text-align: center;
