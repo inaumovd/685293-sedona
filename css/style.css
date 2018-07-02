@@ -491,7 +491,11 @@ a {
 
 .advantage-title {
 	margin:0 0 23px 0;
-	padding: 0 43px;
+	padding: 0 66px;
+}
+
+.tourists {
+	padding: 0 78px;
 }
 
 .advantage .advantage-left,
@@ -545,22 +549,27 @@ padding-bottom: 82px;
 }
 
 .reasons {
-	height: 256px;
+
 }
 
 .reasons-list {
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	height: 256px;
 	margin: 0;
-	padding:0px;
+	padding: 0;
+	justify-content: center;
 }
 
-.reasons-list li {
-	margin: 0px;
-	padding:0px;
+.reason-list-item {
+	padding: 0;
 }
+
+.reason-title {
+	padding: 0 10px;
+}
+.reasons-list-item p {
+
+}
+
 
 .order {
 	position: relative;
