@@ -392,22 +392,23 @@ a {
 	background-color:#8cb8d2;
 }
 
-.map{
-	background-color: #dfe7cb;
-	height: 473px;
-}
-
-.map-image {
-	display: none; /*временно*/
+.map {
+	height: 593px;
+	background-color: #9b7966;
+	background-image: url("../img/map.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .page-footer {
-	background-color: rgba(235, 235, 235, 0.9);
+	background-color: rgba(235, 235, 235, 0.7);
 	box-sizing: border-box;
 	padding-left: 132px;
 	display: flex;
 	align-items: center;
-	height: 120px;
+	padding-top: 26px;
+	padding-bottom: 27px;
+	margin-top: -121px;
 }
 
 .footer-hashtag h3 {
@@ -429,12 +430,26 @@ a {
 	position: relative;
 }
 
-.footer-social a:before {
+.footer-social a::before {
 	content: "";
 	position: absolute;
 	width: 46px;
 	height: 48px;
 	background-color: #81b3d2;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.footer-social a:first-child::before {
+	background-image: url("../img/twitter.svg");
+}
+
+.footer-social a:nth-child(2)::before {
+	background-image: url("../img/fb-icon.svg");
+}
+
+.footer-social a:nth-child(3)::before {
+	background-image: url("../img/youtube.svg");
 }
 
 .footer-copyright {
