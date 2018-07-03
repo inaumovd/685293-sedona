@@ -329,7 +329,7 @@ a {
 	margin-left: -284px;
 	padding-left: 55px;
 	padding-top: 54px;
-	padding-right: 51px;
+	padding-right: 55px;
 }
 
 .input-container {
@@ -344,13 +344,48 @@ a {
 	margin-left: 18px;
 	padding-left: 11px;
 	padding-top: 13px;
-	padding-bottom: 13px;
+	padding-bottom: 10px;
 	padding-right: 188px;
 	margin-bottom: 25px;
 }
 
-.search-form-date input:nth-child(2) {
+.search-form-date:nth-child(2) input{
 	margin-left: 14px;
+}
+
+.search-form-date:first-child {
+	margin-bottom: 4px;
+}
+
+.search-form-date:nth-child(2) {
+	margin-bottom: 4px;
+}
+
+.visitors {
+	display: flex;
+}
+
+.search-form-visitors {
+	display: flex;
+	align-items: center;
+}
+
+.search-form-visitors input {
+	margin: 0;
+	padding: 0;
+	margin-left: 38px;
+	padding: 11px 0;
+	width: 104px;
+	text-align: center;
+	padding-left: 11px;
+}
+
+.search-form-visitors:nth-child(2) {
+	margin-left: 53px;
+}
+
+.search-form-visitors:nth-child(2) input{
+	margin-left: 19px;
 }
 
 .search-form input {
@@ -377,6 +412,12 @@ a {
 .search-form input:focus {
 	background-color: transparent;
 	border: 2px solid #e5e5e5;
+}
+
+.search-btn {
+	padding: 16px 196px;
+	margin-top: 54px;
+	margin-bottom: 55px;
 }
 
 .button {
@@ -436,6 +477,9 @@ a {
 	align-items: center;
 	padding-top: 26px;
 	padding-bottom: 27px;
+}
+
+.index-footer {
 	margin-top: -121px;
 }
 
