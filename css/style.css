@@ -30,11 +30,13 @@ a {
 .container {
 	width: 1200px;
 	margin: 0 auto;
+	box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
 .main-navigation {
 	line-height: 26px;
 	color: #000000;
+	font-weight: bold;
 
 	background-color: #ffffff;
 }
@@ -87,6 +89,7 @@ a {
 	margin-left: -69px;
 	width: 138px;
 	height: 70px;
+	z-index: 1;
 }
 
 .intro {
@@ -342,10 +345,11 @@ a {
 /*	width: 347px;
 	height: 40px;*/
 	margin-left: 18px;
-	padding-left: 11px;
+/*	padding-left: 11px;
 	padding-top: 13px;
 	padding-bottom: 10px;
-	padding-right: 188px;
+	padding-right: 188px;*/
+	padding: 11px 188px 7px 8px;
 	margin-bottom: 25px;
 }
 
@@ -363,6 +367,7 @@ a {
 
 .visitors {
 	display: flex;
+	margin-top: 6px;
 }
 
 .search-form-visitors {
@@ -377,7 +382,9 @@ a {
 	padding: 11px 0;
 	width: 104px;
 	text-align: center;
-	padding-left: 11px;
+/*	padding-left: 7px;
+	padding-bottom: 7px;*/
+	padding: 9px 4px;
 }
 
 .search-form-visitors:nth-child(2) {
@@ -395,6 +402,8 @@ a {
 
 	background-color: #f2f2f2;
 	border: none; 
+
+	border: 2px solid transparent;
 }
 
 .search-form input::-webkit-input-placeholder { 
@@ -412,6 +421,7 @@ a {
 .search-form input:focus {
 	background-color: transparent;
 	border: 2px solid #e5e5e5;
+/*	padding: 11px 188px 7px 8px;*/
 }
 
 .search-btn {
@@ -566,8 +576,6 @@ a {
 	background-image: url("../img/filter-background.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
-
-	height: 217px;
 }
 
 .filters fieldset {
@@ -576,6 +584,7 @@ a {
 
 .filters legend {
 	font-weight: bold;
+	margin-bottom: 8px;
 }
 
 .filters input {
@@ -585,26 +594,49 @@ a {
 
 .filters-form {
 	display: flex;
+	justify-content: space-between;
+	padding: 28px 72px 34px 72px;
+}
+
+.filters-form fieldset {
+	margin: 0;
+	padding: 0;
+}
+
+.radio-container {
+	display: flex;
 }
 
 .additions {
-	margin: 0px;
+/*	margin: 0px;
 	padding: 0px;
 	margin-top: 28px;
-	margin-left: 73px;
+	margin-left: 73px;*/
 }
 
-.accommodation-type {
-	margin: 0px;
+.filters-form .accommodation-type {
+/*	margin: 0px;
 	padding: 0px;
 	margin-top: 28px;
+	margin-left: 119px;*/
 	margin-left: 119px;
 }
 
 .price-container {
+/*	margin: 29px 0px 0px 352px;*/
+	width: 318px;
+}
+
+.price {
+	display: flex;
+	width: 314px;
+	height: 33px;
+}
+
+.accommodation-price {
 	display: flex;
 	flex-direction: column;
-	margin: 29px 0px 0px 352px;
+	box-sizing: border-box;
 }
 
 .found {
@@ -654,6 +686,8 @@ a {
 
 	background-color: transparent;
 	border: 2px solid #ffffff;
+	padding: 5px 34px;
+	margin: 55px 0 0 85px;
 }
 
 .transparent-btn:hover,
@@ -759,15 +793,38 @@ a {
 .hotel-info {
 	margin-left: 30px;
 	width: 300px;
+	margin-top: -4px;
 }
+
+.hotel-btn {
+	padding: 5px 17px;
+}
+
+.hotel-info .brown-btn {
+	margin-left: 2px;
+}
+
+.hotel-price {
+	margin-top: 5px;
+	margin-bottom: 16px;
+	margin-right: 122px;
+	display: flex;
+	justify-content: space-between;
+}
+
+/*.hotel-price span:first-child {
+	margin-right: 1px;
+}*/
 
 .hotel-rating {
 	color:#666666;
 
 	background-color: #f2f2f2;
 
-	margin-left: 495px;
-	margin-top: 66px;
+	margin-left: 480px;
+	margin-top: 61px;
+
+	padding: 4px 13px;
 }
 
 .hotel-btn {
