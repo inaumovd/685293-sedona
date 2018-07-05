@@ -825,6 +825,21 @@ a {
 	margin-top: 61px;
 
 	padding: 4px 13px;
+	position: relative;
+}
+
+.hotel-rating::before {
+	content: "";
+
+	position: absolute;
+	width: 89px;
+	height: 20px;
+
+	top: -63px; 
+	left: 21px;
+
+	background-image: url("../img/star.svg");
+	background-repeat: space;
 }
 
 .hotel-btn {
