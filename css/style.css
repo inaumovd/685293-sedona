@@ -824,11 +824,11 @@ a {
 	margin-left: 480px;
 	margin-top: 61px;
 
-	padding: 4px 13px;
+	padding: 4px 14px;
 	position: relative;
 }
 
-.hotel-rating::before {
+.four-star::before {
 	content: "";
 
 	position: absolute;
@@ -840,6 +840,36 @@ a {
 
 	background-image: url("../img/star.svg");
 	background-repeat: space;
+}
+
+.two-star::before {
+	content: "";
+
+	position: absolute;
+	width: 40px;
+	height: 20px;
+
+	top: -63px; 
+	left: 70px;
+
+	background-image: url("../img/star.svg");
+	background-repeat: space;
+
+}
+
+.three-star::before {
+	content: "";
+
+	position: absolute;
+	width: 63px;
+	height: 20px;
+
+	top: -63px; 
+	left: 47px;
+
+	background-image: url("../img/star.svg");
+	background-repeat: space;
+
 }
 
 .hotel-btn {
