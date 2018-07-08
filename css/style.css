@@ -317,6 +317,10 @@ a {
 	background-color: #ffffff;
 }
 
+.search-form-hide {
+	display: none;
+}
+
 .input-container {
 	margin:0 50px;
 }
@@ -620,6 +624,11 @@ a {
 /*hotels.html*/
 
 .site-navigation .hotels-link {
+	color: #766357;
+}
+
+.site-navigation .hotels-link:hover,
+.site-navigation .hotels-link:focus {
 	color: #766357;
 }
 
