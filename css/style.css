@@ -501,11 +501,13 @@ a {
 }
 
 .map {
+	position: relative;
 	height: 593px;
 	background-color: #9b7966;
 	background-image: url("../img/map.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
+	z-index: -1;
 }
 
 .page-footer {
