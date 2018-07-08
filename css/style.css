@@ -515,6 +515,7 @@ a {
 	padding: 26px 0 27px 132px;
 	background-color: rgba(235, 235, 235, 0.7);
 	box-sizing: border-box;
+	z-index:2;
 }
 
 .index-footer {
