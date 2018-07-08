@@ -1,5 +1,5 @@
-var button = document.qerySelector(".search-btn");
-var form = document.qerySelector(".search-form");
+var button = document.querySelector(".hotel-search-btn");
+var form = document.querySelector(".search-form");
 
 button.addEventListener("click", function (evt) {
 	evt.preventDefault();
