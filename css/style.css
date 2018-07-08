@@ -321,6 +321,10 @@ a {
 	margin:0 50px;
 }
 
+.search-form-date {
+	position: relative;
+}
+
 .search-form-date input{
 	margin: 0 0 25px 18px;
 	padding: 11px 188px 7px 8px;
@@ -338,12 +342,72 @@ a {
 	margin-bottom: 4px;
 }
 
+.input-icon {
+	width: 40px;
+	height: 35px;
+	margin: 0;
+	padding: 0;
+	background-color: #f2f2f2;
+	border: none;
+}
+
+.calendar {
+	position: absolute;
+	top: 4px;
+	left: 418px;
+	fill: #cacaca;
+	background-color: transparent;
+}
+
+.minus,
+.plus {
+	position: absolute;
+	fill: #cacaca;
+	background-color: transparent;
+}
+
+.minus {
+	bottom: 4px;
+	left: 111px;
+}
+
+.plus {
+	left: 186px;
+	bottom: 0px;
+}
+
+.search-form-visitors:nth-child(2) .minus{
+	left: 62px;
+	bottom: 4px;
+}
+
+.search-form-visitors:nth-child(2) .plus{
+	left: 137px;
+	bottom: 1px;
+}
+
+.calendar svg:hover, 
+.calendar svg:focus,
+.minus svg:hover, 
+.minus svg:focus,
+.plus svg:hover,
+.plus svg:focus {
+	fill: #000000;
+}
+
+.calendar svg:active,
+.minus svg:active, 
+.plus svg:active {
+	fill: #81b3d2;
+}
+
 .visitors {
 	display: flex;
 	margin-top: 6px;
 }
 
 .search-form-visitors {
+	position: relative;
 	display: flex;
 	align-items: center;
 }
