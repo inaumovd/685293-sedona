@@ -317,6 +317,10 @@ a {
 	background-color: #ffffff;
 }
 
+.search-form-hide {
+	display: none;
+}
+
 .input-container {
 	margin:0 50px;
 }
