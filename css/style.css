@@ -97,12 +97,14 @@ a {
 	background-repeat: no-repeat;
 	background-position: 0px -83px;
 	background-size: cover;
+	text-align: center;
 }
 
 .intro::before {
 	content: "";
 	position: absolute;
 	top: 451px;
+	left: 0px;
 	width: 1200px; 
 	height: 58px;
 	background-image: url("../img/intro.png");
@@ -110,10 +112,7 @@ a {
 }
 
 .welcome-logo {
-	position: absolute;
-	left: 50%;
-	top:76px;
-	margin-left: -229px;
+padding: 76px 0;
 }
 
 .promo {
@@ -526,10 +525,10 @@ a {
 
 .page-footer {
 	position: relative;
-	box-sizing: border-box;
 	display: flex;
+	justify-content: space-between;
 	align-items: center;
-	padding: 26px 0 27px 132px;
+	padding: 27px 100px 27px 132px;
 	background-color: rgba(255, 255, 255, 0.9);
 	box-sizing: border-box;
 	z-index: 1;
@@ -549,7 +548,6 @@ a {
 	display: flex;
 	justify-content: space-between;
 	width: 104px;
-	margin: 0 0 47px 256px;
 }
 
 .footer-social a {
@@ -559,6 +557,8 @@ a {
 .footer-social a::before {
 	content: "";
 	position: absolute;
+	top: -24px;
+	left: -9px;
 	width: 46px;
 	height: 48px;
 	background-color: #81b3d2;
@@ -569,6 +569,8 @@ a {
 .footer-social a::after {
 	content: "";
 	position: absolute;
+	top: -24px;
+	left: -9px;
 	width: 46px;
 	height: 48px;
 	background-repeat: no-repeat;
@@ -614,7 +616,6 @@ a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-left: 274px;
 }
 
 .footer-copyright b {
@@ -938,6 +939,7 @@ a {
 }
 
 .hotel-info {
+	width: 300px;
 	margin: -4px 0 0 30px;
 }
 
