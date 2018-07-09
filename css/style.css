@@ -954,7 +954,8 @@ padding: 76px 0;
 .hotel-price {
 	display: flex;
 	justify-content: space-between;
-	margin: 5px 81px 16px 0;
+	margin: 5px 0 16px 0;
+	padding-right: 122px;
 }
 
 .priсe-table {
