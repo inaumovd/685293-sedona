@@ -32,6 +32,7 @@ a {
 }
 
 .main-navigation {
+	position: relative;
 	line-height: 26px;
 	color: #000000;
 	font-weight: bold;
@@ -39,7 +40,6 @@ a {
 }
 
 .site-navigation {
-	position: relative;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -90,6 +90,7 @@ a {
 }
 
 .intro {
+	position: relative;
 	height: 508px;
 	background-color: #496173;
 	background-image: url("../img/background.jpg");
@@ -101,11 +102,18 @@ a {
 .intro::before {
 	content: "";
 	position: absolute;
-	top: 132px;
+	top: 451px;
 	width: 1200px; 
-	height: 432px;
+	height: 58px;
 	background-image: url("../img/intro.png");
 	background-repeat: no-repeat;
+}
+
+.welcome-logo {
+	position: absolute;
+	left: 50%;
+	top:76px;
+	margin-left: -229px;
 }
 
 .promo {
@@ -822,7 +830,7 @@ a {
 	align-items: center;
 	font-size: 12px;
 	line-height: 18px;
-	margin-left: -469px;
+	margin-left: -450px;
 	background-color: #ffffff;
 }
 
@@ -903,7 +911,8 @@ a {
 
 .hotel-item {
 	display: flex;
-	padding: 30px 0 30px 72px;
+	justify-content: space-between;
+	padding: 30px 72px;
 	background-color: #ffffff;
 	border-top: 1px solid #e5e5e5;
 }
@@ -929,7 +938,6 @@ a {
 }
 
 .hotel-info {
-	width: 300px;
 	margin: -4px 0 0 30px;
 }
 
@@ -944,7 +952,7 @@ a {
 .hotel-price {
 	display: flex;
 	justify-content: space-between;
-	margin: 5px 122px 16px 0;
+	margin: 5px 81px 16px 0;
 }
 
 .priсe-table {
@@ -1036,45 +1044,42 @@ a {
 	left: 80%;
 }
 
+.hotel {
+	display: flex;
+}
+
 .hotel-rating {
 	position: relative;
-	margin: 61px 0 0 480px;
 	padding: 4px 14px;
 	color:#666666;
 	background-color: #f2f2f2;
 }
 
-.four-star::before {
-	content: "";
-	position: absolute;
-	top: -63px; 
-	left: 21px;
+.rating {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.star {
+	height: 17px;
+	margin: 0;
+	background-color: #ffffff;
+	background-image: url("../img/star.svg");
+	background-repeat: space;
+}
+
+.four-stars {
 	width: 89px;
-	height: 20px;
-	background-image: url("../img/star.svg");
-	background-repeat: space;
 }
 
-.two-star::before {
-	content: "";
-	position: absolute;
-	top: -63px;
-	left: 70px;
-	width: 40px;
-	height: 20px;
-	background-image: url("../img/star.svg");
-	background-repeat: space;
+.three-stars {
+	width: 65px;
 }
 
-.three-star::before {
-	content: "";
-	position: absolute;
-	top: -63px;
-	left: 47px;
-	width: 63px;
-	height: 20px;
-	background-image: url("../img/star.svg");
-	background-repeat: space;
+.two-stars {
+	width: 41px;
 }
 
 .hotel-btn {
