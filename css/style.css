@@ -745,10 +745,12 @@ padding: 76px 0;
 
 .additions {
 	display: flex;
+	flex-direction: column;
 }
 
 .filters-form .accommodation-type {
 	display: flex;
+	flex-direction: column;
 	margin-left: 121px;
 }
 
@@ -939,7 +941,6 @@ padding: 76px 0;
 }
 
 .hotel-info {
-	width: 300px;
 	margin: -4px 0 0 30px;
 }
 
@@ -954,7 +955,7 @@ padding: 76px 0;
 .hotel-price {
 	display: flex;
 	justify-content: space-between;
-	margin: 5px 81px 16px 0;
+	margin: 5px 0 16px 0;
 }
 
 .priсe-table {
