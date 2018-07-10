@@ -175,14 +175,14 @@ a {
 
 .advantage-left p,
 .advantage-right p{
-	padding: 0 42px;
+	padding: 0 43px;
 	margin: 21px 0 0 0;
 }
 
 .advantage-image {
-	width:800px;
-	background-position:center;
-	background-repeat: no-repeat;
+	width: 800px;
+	line-height: 0;
+	background-color: #56403c;
 }
 
 .city-image{
