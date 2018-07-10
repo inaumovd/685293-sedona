@@ -91,7 +91,8 @@ a {
 
 .intro {
 	position: relative;
-	height: 508px;
+	height: 356px;
+	padding: 76px 0;
 	background-color: #496173;
 	background-image: url("../img/background.jpg");
 	background-repeat: no-repeat;
@@ -109,10 +110,6 @@ a {
 	height: 58px;
 	background-image: url("../img/intro.png");
 	background-repeat: no-repeat;
-}
-
-.welcome-logo {
-padding: 76px 0;
 }
 
 .promo {
@@ -317,6 +314,7 @@ padding: 76px 0;
 .search-form {
 	position: absolute;
 	left: 50%;
+	width: 458px;
 	margin: 0 0 0 -284px;
 	padding: 54px 55px 0 55px;
 	color: #000000;
@@ -339,12 +337,12 @@ padding: 76px 0;
 }
 
 .search-form-date input{
-	margin: 0 0 25px 18px;
+	margin: 0 0 25px 16px;
 	padding: 11px 188px 7px 8px;
 }
 
 .search-form-date:nth-child(2) input{
-	margin-left: 14px;
+	margin-left: 12px;
 }
 
 .search-form-date:first-child {
@@ -427,7 +425,7 @@ padding: 76px 0;
 
 .search-form-visitors input {
 	width: 104px;
-	margin: 0 0 0 38px;
+	margin: 0 0 0 37px;
 	padding: 9px 4px;
 	text-align: center;
 }
@@ -547,18 +545,23 @@ padding: 76px 0;
 .footer-social {
 	display: flex;
 	justify-content: space-between;
-	width: 104px;
 }
 
 .footer-social a {
 	position: relative;
+	width: 46px;
+	margin-right: 6px;
+}
+
+.footer-social a:last-child{
+margin-right: 0;
 }
 
 .footer-social a::before {
 	content: "";
 	position: absolute;
 	top: -24px;
-	left: -9px;
+	left: 16px;
 	width: 46px;
 	height: 48px;
 	background-color: #81b3d2;
@@ -570,7 +573,7 @@ padding: 76px 0;
 	content: "";
 	position: absolute;
 	top: -24px;
-	left: -9px;
+	left: 16px;
 	width: 46px;
 	height: 48px;
 	background-repeat: no-repeat;
@@ -1066,12 +1069,21 @@ padding: 76px 0;
 	align-items: flex-end;
 }
 
+.star-rating {
+	display: flex;
+	padding: 0 1px;
+}
+
 .star {
 	height: 17px;
+	width: 17px;
 	margin: 0;
+	margin-left: 7px;
 	background-color: #ffffff;
 	background-image: url("../img/star.svg");
 	background-repeat: space;
+
+
 }
 
 .four-stars {
