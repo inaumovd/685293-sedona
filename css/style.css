@@ -344,11 +344,10 @@ a {
 /*	margin: 0 0 25px 16px;
 	padding: 11px 188px 7px 8px;*/
 	padding: 10px 185px 8px 12px;
-	margin-left: 19px;
 }
 
 .search-form-date:nth-child(2) input{
-	margin-left: 12px;
+
 }
 
 .search-form-date:first-child {
