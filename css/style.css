@@ -341,13 +341,8 @@ a {
 }
 
 .search-form-date input{
-/*	margin: 0 0 25px 16px;
-	padding: 11px 188px 7px 8px;*/
+	width: 146px;
 	padding: 10px 185px 8px 12px;
-}
-
-.search-form-date:nth-child(2) input{
-
 }
 
 .search-form-date:first-child {
